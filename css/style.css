@@ -1,0 +1,19 @@
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+body {
+    background: #B8E8FC;
+    font-family: 'Poppins';
+    color: #000000;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.75rem;
+}

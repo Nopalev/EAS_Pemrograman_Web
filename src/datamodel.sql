@@ -1,6 +1,6 @@
-CREATE TABLE akun(
+CREATE TABLE users(
     akun_id int NOT NULL AUTO_INCREMENT,
-    nama varchar(50) NOT NULL UNIQUE,
+    username varchar(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     admin BOOLEAN DEFAULT FALSE,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,

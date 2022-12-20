@@ -9,6 +9,7 @@ CREATE TABLE users(
 
 CREATE TABLE peserta(
     peserta_id int NOT NULL AUTO_INCREMENT,
+    akun_id
     NIK varchar(50) NOT NULL UNIQUE,
     NomorPeserta varchar(50) NOT NULL UNIQUE,
     Nama varchar(50) NOT NULL,
@@ -21,3 +22,7 @@ CREATE TABLE peserta(
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT peserta_id PRIMARY KEY (peserta_id)
 );
+
+
+ALTER TABLE peserta ADD akun_id int;
+ALTER TABLE peserta ADD FOREIGN KEY (akun_id) REFERENCES users(akun_id);
